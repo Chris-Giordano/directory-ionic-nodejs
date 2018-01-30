@@ -1,4 +1,4 @@
-<ion-view title="Entropy Scout 201`8">
+<ion-view title="Entropy Scout Match 2018">
 
 <!--
   <ion-nav-buttons side="left">
@@ -15,17 +15,11 @@
 
 
 
-  <h5>Basic Info</h5>
+  <h5>Match Info</h5>
 
 
 
 <div class="row">
-  <div class="col">
-      <label class="item item-input item-floating-label">
-    <span class="input-label">Team #</span>
-    <input type="number" min="0" placeholder="Team #"  list="{{data.teamlist}}" ng-model="data.teamnumber">
-  </label>
-  </div>
   <div class="col">
       <label class="item item-input item-floating-label">
     <span class="input-label">Match #</span>
@@ -36,54 +30,8 @@
 </div>
 
   
-<h5> Autonomous </h5>
+<h5> Match Time </h5>
        
-<!--        
-<ul class="list">
-<li class="item">
-        <div class="row">
-          <div class="col">
-            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-            <button id="first-multiplier" class="btn btn-sm btn-outline-primary multiplier" ng-click="setIncri('one')" rel="1"><small>&plusmn; 1</small></button>
-            <button class="btn btn-sm btn-outline-primary multiplier" ng-click="setIncri('five')" rel="5"><small>&plusmn; 5</small></button>
-            <button class="btn btn-sm btn-outline-primary multiplier" ng-click="setIncri('ten')"  rel="10"><small>&plusmn; 10</small></button>
-            <button class="btn btn-sm btn-outline-primary multiplier" ng-click="setIncri('twenty')"  rel="20"><small>&plusmn; 20</small></button>
-
-            </div>
-          </div>
-          <div class="col">
-                <div class="col">
-                Incriment:
-                </div>
-               <div class="col">
-                <input type="number"  min="1" placeholder="1" ng-model="incriTeli2" disabled>
-               </div>
-          </div>
-        </div>
- 
-<div class="row">
-  
-       <div class="form-inline">
-            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                <div class="input-group-addon">Fuel High Goal(A)</div>
-                <input id="auto-high-goal-counter" ng-value="highgoalAutoCount" type="number" class="form-control counters" placeholder="0"  disabled>
-                <button id="auto-high-goal-plus" ng-click="upHighA()" class="btn btn-outline-success up multiplier-tag notransition">+</button>
-                <button id="auto-high-goal-minus" ng-click="downHighA()" class="btn btn-outline-danger down multiplier-tag notransition">-</button>
-            </div>
-        </div>
-</div> 
-<div class="row">
-         <div class="form-inline">
-            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                <div class="input-group-addon">Fuel Low Goal(A)</div>
-                <input id="auto-high-goal-counter"  ng-value="lowgoalAutoCount" type="text" class="form-control counters" placeholder="0"  disabled>
-                <button id="auto-high-goal-plus" ng-click="upLowA()" class="btn btn-outline-success up multiplier-tag notransition">+</button>
-                <button id="auto-high-goal-minus" ng-click="downLowA()" class="btn btn-outline-danger down multiplier-tag notransition">-</button>
-            </div>
-      	  </div>
--->
-</div>
-</li>
 <li class="item">
 <div class="row">
 	<input type="checkbox">
@@ -99,7 +47,7 @@
 	</div>
 <div class="row">
 	<input type="checkbox"
-		<checkbox ng-model="data.PlaceScaleW/Traverse"> Place on Scale W/ Traverse</checkbox>
+		<checkbox ng-model="data.PlaceScaleW/Traverse">Place on Scale W/ Traverse</checkbox>
 	</div>
 </li>
 <!--
@@ -162,32 +110,13 @@
            <div class="form-inline">
             <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                 <div class="input-group-addon">Place Scale</div>
-                <input id="auto-place-scale-counter" ng-value="placescaleCountTele" type="number" class="form-control counters" placeholder="0"  disabled>
+                <input id="place-scale" ng-value="placescaleCountTele" type="number" class="form-control counters" placeholder="0"  disabled>
                 <button id="auto-place-scale-plus" ng-click="upGearCount()" class="btn btn-outline-success up multiplier-tag notransition">+</button>
                 <button id="auto-place-scale-minus" ng-click="downGearCount()" class="btn btn-outline-danger down multiplier-tag notransition">-</button>
             </div>
           </div>
         </div>
-		<div class="row">
-           <div class="form-inline">
-            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                <div class="input-group-addon">Vault</div>
-                <input id="auto-vault-counter" ng-value="vaultCountTele" type="number" class="form-control counters" placeholder="0"  disabled>
-                <button id="auto-vault-plus" ng-click="upGearCount()" class="btn btn-outline-success up multiplier-tag notransition">+</button>
-                <button id="auto-vault-minus" ng-click="downGearCount()" class="btn btn-outline-danger down multiplier-tag notransition">-</button>
-            </div>
-          </div>
-        </div>
-		<div class="row">
-           <div class="form-inline">
-            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                <div class="input-group-addon">Penalties</div>
-                <input id="auto-penalty-counter" ng-value="placescaleCountTele" type="number" class="form-control counters" placeholder="0"  disabled>
-                <button id="auto-penalty-plus" ng-click="upGearCount()" class="btn btn-outline-success up multiplier-tag notransition">+</button>
-                <button id="auto-penalty-minus" ng-click="downGearCount()" class="btn btn-outline-danger down multiplier-tag notransition">-</button>
-            </div>
-          </div>
-        </div>
+
       </li>
       
       

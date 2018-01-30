@@ -1203,8 +1203,8 @@ $ionicLoading.hide();
 
 
 
-.controller('TowerRanking', function($scope, $stateParams, $ionicLoading ) {
-console.log(" Tower Rank");
+.controller('SwitchRanking', function($scope, $stateParams, $ionicLoading ) {
+console.log(" Switch Rank");
 
 
 var contains = function(needle) {

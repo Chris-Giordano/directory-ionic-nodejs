@@ -56,7 +56,17 @@ Parse.serverURL = 'http://server138scouter.herokuapp.com/parse';
         }
       }
     })
-  .state('tab.dash', {
+  .state('tab.match', {
+	  url: '/enter2',
+	  views:  {
+		  'tab-match':  {
+			  templateUrl: 'templates/tab-match.html',
+			  controller: 'MatchCtrl'
+		  }
+	  }
+    })
+  .state('tab.dash',
+ {
     url: '/dash',
     views: {
       'tab-dash': {
